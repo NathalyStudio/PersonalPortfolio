@@ -149,13 +149,15 @@ header ul li:hover {
 
 #welcome--section h1 {
     font-size: 2em;
+    font-weight: 600;
 }
 
 .typewrite {
     background: -webkit-linear-gradient(var(--emphasis), #fb923c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 
