@@ -15,14 +15,14 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="navbar__links">
+                <li><a class="navbar__link" href="index.html">Home</a></li>
+                <li><a class="navbar__link" href="">About</a></li>
+                <li><a class="navbar__link" href="">Portfolio</a></li>
+                <li><a class="navbar__link" href="">Services</a></li>
+                <li><a class="navbar__link" href="">Contact</a></li>
             </ul>
         </nav>
 
@@ -30,29 +30,28 @@
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-            <ul class="mobile--menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact</a></li>
+            <ul class="mobile--menu navbar__links">
+                <li><a class="navbar__link" href="index.html">Home</a></li>
+                <li><a class="navbar__link" href="">About</a></li>
+                <li><a class="navbar__link" href="">Portfolio</a></li>
+                <li><a class="navbar__link" href="">Services</a></li>
+                <li><a class="navbar__link" href="">Contact</a></li>
             </ul>
         </div>
     </header>
     <main id="hero">
-        <canvas id="canvas"></canvas>
+        <canvas id="hero__canvas"></canvas>
         <canvas id="canvas--cursor__effect"></canvas>
-        <section id="welcome--section">
+        <section id="hero--section">
 
             <h1>Hi! My name is Andreina, <br>and
                 <span class="typewrite" data-period="2000" data-type='[ "I am a creative mind.", "I love UX/UI design.", "I love frontend development." ]'></span> </h1>
             <h1>
         </section>
     </main>
+    <footer>
 
-
-    <div>prueba </div>
-
+    </footer>
 
     <!-- starfield background animations -->
     <script src="js/starfield.js"></script>

@@ -1,5 +1,5 @@
 /* Get the element canvas in the dom */
-const canvas = document.getElementById("canvas");
+const canvas = document.getElementById("hero__canvas");
 /*  Access to the canvas API for modifying and animating the element*/
 const c = canvas.getContext("2d");
 /* variables "w" and "h" will keep track of the internal resolution of the canvas */
