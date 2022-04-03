@@ -1,0 +1,8 @@
+.trail {
+    /* className for the trail elements */
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 3px;
+    background: -webkit-linear-gradient(#FAD30F, #fb923c);
+}
