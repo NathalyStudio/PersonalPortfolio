@@ -45,11 +45,7 @@ body {
 }
 
 .orange-yellow-gradient {
-    background: var(--notion-orange);
-    background: -moz-linear-gradient(167deg, --notion-orange 22%, --notion-yellow 64%);
-    background: -webkit-linear-gradient(167deg, --notion-orange 22%, --notion-yellow 64%);
-    background: linear-gradient(167deg, --notion-orange 22%, var(--notion-yellow) 64%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#d9730d", endColorstr="#fad30f", GradientType=1);
+    background: linear-gradient(to right, var(--notion-orange), var(--emphasis));
 }
 
 .header {
