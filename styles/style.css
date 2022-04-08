@@ -41,6 +41,14 @@ body {
     background: linear-gradient(to right, var(--notion-orange), var(--emphasis));
 }
 
+.text--orange--yellow--gradient {
+    background: -webkit-linear-gradient(var(--notion-orange), var(--emphasis));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* 
+    color: linear-gradient(to right, var(--notion-orange), var(--emphasis)); */
+}
+
 .header {
     /* para que el menú se mantenga fijado durante el scroll */
     position: fixed;

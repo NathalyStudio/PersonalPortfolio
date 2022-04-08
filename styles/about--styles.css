@@ -30,12 +30,25 @@ body {
     border-radius: 20em;
 }
 
-.main--title {
+.main--title,
+.skills-title {
     padding-left: 10%;
+    font-size: 2.2em;
+    font-weight: 1500;
 }
 
-.main--description {
+.main--description,
+.skills-description {
     padding-left: 10%;
     margin-top: 7%;
     line-height: 1.8em;
+}
+
+.skills {
+    background: var(--charleston-black);
+    padding: 10%;
+}
+
+.footer {
+    padding-left: 10%;
 }
