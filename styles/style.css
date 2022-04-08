@@ -222,6 +222,7 @@ body {
     color: var(--main-tx-color);
     font-weight: bold;
     opacity: 1;
+    text-decoration: none;
 }
 
 .footer__menu {
@@ -304,6 +305,8 @@ body {
     }
     .footer--main-text {
         margin-bottom: 5%;
+        margin-left: 2em;
+        margin-right: 2em;
     }
     .footer--text {
         font-size: 1.5rem;
@@ -327,7 +330,23 @@ body {
 
 /* Laptop L */
 
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+    .hero--title {
+        min-width: 800px;
+    }
+    .footer--main-text {
+        margin: 1em 8%;
+    }
+    .footer--btn__contact {
+        padding: .5%;
+    }
+    .footer__links {
+        padding: .8em 7%;
+    }
+    .footer__bottom {
+        margin: 1em 0;
+    }
+}
 
 
 /* @media only screen and (max-width: 600px) {
