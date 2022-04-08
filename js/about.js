@@ -14,7 +14,7 @@ sr.reveal('.main--title, .skills-title', {
     origin: 'right',
     distance: '-200px',
     delay: 100,
-    reset: true
+
 });
 /* animación desde abajo y delay */
 sr.reveal('.main--description, skills-description', {
@@ -22,6 +22,6 @@ sr.reveal('.main--description, skills-description', {
     origin: 'right',
     distance: '-200px',
     delay: 200,
-    reset: true
+
 });
 /* animación top sin delay */

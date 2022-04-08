@@ -52,3 +52,55 @@ body {
 .footer {
     padding-left: 10%;
 }
+
+
+/* medium smartphones */
+
+@media (min-width: 375px) {
+    .main--pic {
+        max-height: 29rem;
+    }
+}
+
+
+/* tablets */
+
+@media (min-width: 768px) {
+    .main--content {
+        flex-direction: row;
+    }
+    .main--pic {
+        margin-top: 5%;
+        padding: .5%;
+    }
+    .main__colummn {
+        display: flex;
+        flex-direction: column;
+    }
+    .main--title {
+        margin-top: 8%;
+        margin-bottom: 3%;
+        padding-left: 1em;
+        width: 70%;
+    }
+    .main--description {
+        margin-top: 1%;
+    }
+    .skills {
+        padding: 1em .5em .5em .5em;
+    }
+    .skills-description {
+        margin-top: 2.5%;
+    }
+    /* 
+    */
+}
+
+
+/* laptops */
+
+@media (min-width: 1024px) {
+    .main--title {
+        margin-left: 6%;
+    }
+}
