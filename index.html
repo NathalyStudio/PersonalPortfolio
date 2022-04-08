@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- this is for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="description" content="escribir meta aaqui">
+    <meta name="description" content="Here is my first personal portfolio. I'm Andreina Rodriguez, a frontend developer and UX/Ui designer.">
     <title>Andreina Rodriguez</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/cursor--animation.css">
@@ -18,11 +18,11 @@
     <header class="header">
         <nav class="navbar">
             <ul class="navbar__links">
-                <li><a class="navbar__link" href="index.html">Home</a></li>
-                <li><a class="navbar__link" href="">About</a></li>
-                <li><a class="navbar__link" href="">Portfolio</a></li>
-                <li><a class="navbar__link" href="">Services</a></li>
-                <li><a class="navbar__link" href="">Contact</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#hero">Home</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="html/about.html">About</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="html/portfolio.html">Portfolio</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="html/services.html">Services</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="html/contact.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -31,28 +31,53 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile--menu navbar__links">
-                <li><a class="navbar__link" href="index.html">Home</a></li>
-                <li><a class="navbar__link" href="">About</a></li>
-                <li><a class="navbar__link" href="">Portfolio</a></li>
-                <li><a class="navbar__link" href="">Services</a></li>
-                <li><a class="navbar__link" href="">Contact</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="index.html">Home</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="html/about.html">About</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="html/portfolio.html">Portfolio</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="html/services.html">Services</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="html/contact.html">Contact</a></li>
             </ul>
         </div>
+
     </header>
     <main id="hero">
-        <canvas id="hero__canvas"></canvas>
-        <canvas id="canvas--cursor__effect"></canvas>
+        <canvas id="hero--canvas"></canvas>
         <section id="hero--section">
 
-            <h1>Hi! My name is Andreina, <br>and
+            <h1 class="hero--title">Hi! My name is Andreina, <br>and
                 <span class="typewrite" data-period="2000" data-type='[ "I am a creative mind.", "I love UX/UI design.", "I love frontend development." ]'></span> </h1>
             <h1>
         </section>
     </main>
-    <footer>
 
+    <footer class="footer">
+        <div class="footer--content">
+            <p class="footer--text">Do you have any doubt or comment? Contact me!</p>
+            <!-- <ul class="socials">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+            </ul> -->
+            <div class="footer__menu">
+                <ul class="footer__links">
+                    <li class="footer__item"><a class="footer__link" href="#hero">Home</a></li>
+                    <li class="footer__item"><a class="footer__link" href="html/about.html">About</a></li>
+                    <li class="footer__item"><a class="footer__link" href="html/portfolio.html">Portfolio</a></li>
+                    <li class="footer__item"><a class="footer__link" href="html/services.html">Services</a></li>
+                    <li class="footer__item"><a class="footer__link" href="html/contact.html">Contact</a></li>
+                    <li class="footer__item"><a href="html/faq.html" class="navbar__link">FAQ</a></li>
+                    <li class="footer__item"><a href="" class="footer__link">Cookies policy</a></li>
+                    <li class="footer__item"><a href="" class="footer__link">Terms&Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__bottom">
+                <p>Copyright &copy; 2022.</p>
+            </div>
+        </div>
     </footer>
-
+    <!-- canvas for cursor effect -->
+    <canvas id="canvas--cursor__effect"></canvas>
     <!-- starfield background animations -->
     <script src="js/starfield.js"></script>
     <!-- Typewriter animation -->

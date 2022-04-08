@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>About me|Andreina Rodriguez</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="navbar__links">
+                <li class="navbar__item"><a class="navbar__link" href="../index.html">Home</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="about.html">About</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="">Portfolio</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="">Services</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="hamburger--icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile--menu navbar__links">
+                <li class="navbar__item"><a class="navbar__link" href="../index.html">Home</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="">About</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="">Portfolio</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="">Services</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- This next two scripts are for responsive menu -->
+    <script>
+        const navbar = document.querySelector(".nav--bar");
+        const menuToggle = document.querySelector(".menu--toggle");
+        menuToggle.addEventListener("click", () => {
+            navbar.classList.toggle("open");
+        });
+    </script>
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+
+aqui no hay nada aun
+
+
+</html>
