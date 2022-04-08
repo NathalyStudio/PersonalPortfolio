@@ -1,0 +1,41 @@
+/* global styles */
+
+:root {
+    --main-tx-color: #fff;
+    --emphasis: #FAD30F;
+    --notion-yellow: #dfab01;
+    --notion-orange: #d9730d;
+    --red-color: #ee1400;
+    --main-bg-color: #333;
+    --eire-black: #121616;
+    --charleston-black: #252D2D;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.main--content {
+    background-color: var(--eire-black);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 5%;
+}
+
+.main--pic {
+    margin-top: 10%;
+    max-height: 23rem;
+    padding: 10%;
+    border-radius: 20em;
+}
+
+.main--title {
+    padding-left: 10%;
+}
+
+.main--description {
+    padding-left: 10%;
+    margin-top: 7%;
+    line-height: 1.8em;
+}
