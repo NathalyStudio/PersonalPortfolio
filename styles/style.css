@@ -12,6 +12,8 @@
     --worn-pink: #B38184;
     --purple: #413E49;
     --gray-color: #333; */
+    --notion-yellow: #dfab01;
+    --notion-orange: #d9730d;
     --red-color: #ee1400;
     --main-bg-color: #333;
 }
@@ -36,6 +38,18 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.rounded-md {
+    border-radius: .375rem;
+}
+
+.orange-yellow-gradient {
+    background: var(--notion-orange);
+    background: -moz-linear-gradient(167deg, --notion-orange 22%, --notion-yellow 64%);
+    background: -webkit-linear-gradient(167deg, --notion-orange 22%, --notion-yellow 64%);
+    background: linear-gradient(167deg, --notion-orange 22%, var(--notion-yellow) 64%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#d9730d", endColorstr="#fad30f", GradientType=1);
 }
 
 .header {
@@ -188,6 +202,23 @@ body {
     text-align: center;
 }
 
+.footer--btn__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3% 2rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-top: 5%;
+    border: 0 none;
+    color: var(--main-tx-color);
+    font-weight: bold;
+    opacity: 1;
+}
+
 .footer__menu {
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
@@ -204,6 +235,8 @@ body {
     text-align: center;
     padding-top: 10px;
 }
+
+@media (min-width: 375px) {}
 
 
 /* @media only screen and (max-width: 600px) {
