@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/about--styles.css">
+    <link rel="stylesheet" href="../styles/sakura.css">
+    <link rel="stylesheet" href="../styles/sakura.min.css">
     <script src="../js/scrollreveal.js"></script>
     <title>About me | Andreina Rodriguez</title>
 </head>
 
 <body>
+
     <header class="header">
         <nav class="navbar">
             <ul class="navbar__links">
@@ -36,7 +39,6 @@
             </ul>
         </div>
     </header>
-
     <main class="main">
         <section class="main--content">
             <img src="../img/ProfilePicturePhotoedited1.jpg" alt="Andreina Rodriguez frontend developer" class="main--pic">
@@ -99,7 +101,28 @@
             menu.classList.toggle('open');
         }
     </script>
+    <!-- scrollreveal animation -->
     <script src="../js/about.js"></script>
+    <!-- background animation -->
+    <script src="../js/sakura.min.js"></script>
+
+    <script>
+        var sakura = new Sakura('body', {
+            colors: [{
+                gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+                gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+                gradientColorDegree: 120,
+            }, {
+                gradientColorStart: 'rgba(255,189,189)',
+                gradientColorEnd: 'rgba(227,170,181)',
+                gradientColorDegree: 120,
+            }, {
+                gradientColorStart: 'rgba(212,152,163)',
+                gradientColorEnd: 'rgba(242,185,196)',
+                gradientColorDegree: 120,
+            }, ],
+        });
+    </script>
 </body>
 
 </html>
