@@ -201,7 +201,7 @@ body {
 
 .section--about {
     background-color: var(--charleston-black);
-    min-height: 40vh;
+    min-height: 30vh;
     padding-bottom: 1em;
     padding-top: 1em;
 }
