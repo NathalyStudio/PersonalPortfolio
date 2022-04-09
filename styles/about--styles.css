@@ -9,6 +9,7 @@
     --main-bg-color: #333;
     --eire-black: #121616;
     --charleston-black: #252D2D;
+    --rgba-charleston-black: rgba(37, 45, 45, .6);
 }
 
 body {
@@ -31,7 +32,8 @@ body {
 }
 
 .main--title,
-.skills-title {
+.skills-title,
+.work-process--title {
     padding-left: 10%;
     font-size: 2.2em;
     font-weight: 1500;
@@ -42,6 +44,32 @@ body {
     padding-left: 10%;
     margin-top: 7%;
     line-height: 1.8em;
+}
+
+.work-process {
+    margin-bottom: 1em;
+    padding: 10%;
+    /*  background: var(--charleston-black) */
+}
+
+.work-process-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-process-card {
+    background: var(--rgba-charleston-black);
+    /* opacity: .7; */
+    color: var(--main-tx-color);
+    border-radius: 10px;
+    padding: 5%;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+.work-process-img {
+    height: 2.5em;
 }
 
 .skills {

@@ -24,4 +24,10 @@ sr.reveal('.main--description, skills-description', {
     delay: 200,
 
 });
-/* animación top sin delay */
+/* animación top con delay */
+sr.reveal('.work-process-card'), {
+    duration: 4500,
+    origin: 'top',
+    distance: '-200px',
+    delay: 200,
+}

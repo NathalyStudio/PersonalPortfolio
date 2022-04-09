@@ -248,7 +248,8 @@ body {
     margin-right: auto; */
 }
 
-.section--services__h3 {
+.section--services__h3,
+.work-process--h3 {
     color: var(--main-tx-color);
     line-height: 1.7em;
     /*     text-align: center; */
