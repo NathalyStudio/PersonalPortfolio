@@ -264,7 +264,7 @@ body {
     position: relative;
     max-width: 100vw;
     transform: rotate(0deg) !important;
-    z-index: 100000 !important;
+    z-index: 9999 !important;
 }
 
 .footer--content {
