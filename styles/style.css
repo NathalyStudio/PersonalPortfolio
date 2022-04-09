@@ -48,6 +48,15 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.divider--section {
+    background: linear-gradient(to right, var(--notion-orange), var(--emphasis));
+    height: 3px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+}
+
 .header {
     /* para que el menú se mantenga fijado durante el scroll */
     position: fixed;
@@ -190,7 +199,22 @@ body {
     display: none;
 }
 
-.section--services--title {
+.section--about {
+    background-color: var(--charleston-black);
+    min-height: 65vh;
+}
+
+.section--about--description {
+    font-size: .9em;
+    text-align: left;
+    margin: 1em 0;
+    line-height: 1.5rem;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.section--services--title,
+.section--about--title {
     display: block;
     padding: 5% 5% 0 5%;
     text-align: center;
@@ -215,7 +239,11 @@ body {
 
 .section--sercives--img {
     max-height: 3em;
-    margin: 0em .8em 0 3em
+    margin-left: auto;
+    margin-right: auto;
+    /* position: absolute;
+    margin-left: auto;
+    margin-right: auto; */
 }
 
 .section--services__h3 {
