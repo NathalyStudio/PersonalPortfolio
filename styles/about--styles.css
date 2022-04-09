@@ -114,8 +114,27 @@ body {
     .main--description {
         margin-top: 1%;
     }
+    .work-process {
+        margin-bottom: 0;
+        padding-bottom: 5%;
+    }
+    .work-process--cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .work-process-card {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .3em;
+    }
     .skills {
-        padding: 1em .5em .5em .5em;
+        min-height: 35vh;
+        padding: 1.5em .5em;
+    }
+    .skills-title {
+        margin-top: .5em;
     }
     .skills-description {
         margin-top: 2.5%;
@@ -130,5 +149,40 @@ body {
 @media (min-width: 1024px) {
     .main--title {
         margin-left: 6%;
+    }
+    .work-process {
+        margin-top: 0;
+        padding-top: 2em;
+    }
+    .work-process--title {
+        padding-left: .3em;
+    }
+    .work-process-card {
+        width: 32%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .3em;
+        padding: 2em;
+    }
+    .skills {
+        align-items: center;
+    }
+    .skills-title {
+        margin-top: 1em;
+    }
+}
+
+
+/* Laptop L */
+
+@media (min-width: 1440px) {
+    .work-process-card {
+        width: 30%;
+    }
+    .work-process {
+        margin-bottom: 1em;
+        margin-top: 1em;
+        padding-bottom: 1em;
+        padding-top: 2em;
     }
 }
