@@ -1,5 +1,5 @@
-var TxtType = function(el, toRotate, period) {
-    this.toRotate = toRotate;
+var TxtType = function(el, rotateText, period) {
+    this.rotateText = rotateText;
     this.el = el;
     this.loopNum = 0;
     this.period = parseInt(period, 10) || 2000;
@@ -9,8 +9,8 @@ var TxtType = function(el, toRotate, period) {
 };
 
 TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+    var i = this.loopNum % this.rotateText.length;
+    var fullTxt = this.rotateText[i];
 
     if (this.isDeleting) {
         this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -18,7 +18,7 @@ TxtType.prototype.tick = function() {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+    this.el.innerHTML = '<span class="typewrite">' + this.txt + '</span>';
 
     var that = this;
     var delta = 200 - Math.random() * 100;
@@ -42,15 +42,15 @@ TxtType.prototype.tick = function() {
 window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
     for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
+        var rotateText = elements[i].getAttribute('data-type');
         var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-            new TxtType(elements[i], JSON.parse(toRotate), period);
+        if (rotateText) {
+            new TxtType(elements[i], JSON.parse(rotateText), period);
         }
     }
-    // INJECT CSS
-    /*  var css = document.createElement("style");
-     css.type = "text/css";
-     css.innerHTML = ".typewrite {color: #FAD30F}";
-     document.body.appendChild(css); */
 };
+// INJECT CSS
+/*  var css = document.createElement("style");
+ css.type = "text/css";
+ css.innerHTML = ".typewrite {z-index:-100;}";
+ document.body.appendChild(css); */
