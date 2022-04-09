@@ -228,7 +228,7 @@ body {
 }
 
 .section--services__left-column,
-.section--about__right-column {
+.section--services__right-column {
     background: var(--rgba-charleston-black);
     /* opacity: .7; */
     color: var(--main-tx-color);
@@ -237,7 +237,7 @@ body {
     margin-bottom: 1em;
 }
 
-.section--sercives--img {
+.section--services--img {
     max-height: 3em;
     margin-left: auto;
     margin-right: auto;
@@ -367,6 +367,26 @@ body {
 /* tablets */
 
 @media (min-width: 768px) {
+    .section--about {
+        min-height: 50vh;
+    }
+    .section--services--cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+    .section--services--title {
+        margin-bottom: 1em;
+    }
+    .section--services__left-column,
+    .section--services__right-column {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5% 4%;
+        width: 42%;
+    }
     .footer--btn__contact {
         padding: 1%;
         font-size: 1rem;
@@ -406,6 +426,17 @@ body {
         font-size: 3em;
         width: 700px;
     }
+    .section--about {
+        min-height: 35vh;
+    }
+    .section--services__left-column,
+    .section--services__right-column {
+        /* margin-left: auto;
+        margin-right: auto;
+        padding: 5% 4%; */
+        padding: 2em;
+        width: 30%;
+    }
     .footer--main-text {
         margin-bottom: 5%;
         margin-left: 2em;
@@ -437,6 +468,13 @@ body {
     .hero--title {
         min-width: 800px;
     }
+    .section--services__left-column,
+    .section--services__right-column {
+        /* margin-left: auto;
+        margin-right: auto;
+         */
+        width: 23%;
+    }
     .footer--main-text {
         margin: 1em 8%;
     }
@@ -450,6 +488,10 @@ body {
         margin: 1em 0;
     }
 }
+
+
+/* @media (min-width: 2560px) {}
+ */
 
 
 /* @media only screen and (max-width: 600px) {
