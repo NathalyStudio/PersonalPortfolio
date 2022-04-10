@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/contact--styles.css">
+    <title>Contact | Andreina Rodriguez</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="navbar__links">
+                <li class="navbar__item"><a class="navbar__link" href="../index.html">Home</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./about.html">About</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./portfolio.html">Portfolio</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./services.html">Services</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="hamburger--icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile--menu navbar__links">
+                <li class="navbar__item"><a class="navbar__link" href="../index.html">Home</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./about.html">About</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./portfolio.html">Portfolio</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./services.html">Services</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="section--contact--form">
+        <h2 class="contact--form--title">Let's get in touch</h2>
+        <p class="contact--form--description">I am available to work on your projects and bring any idea you have to life. We are just a click apart of that conversation.</p>
+        <div class="contact--form--container">
+            <form action="" class="contact-form">
+                <input type="text" name="name" class="form--input" id="name" placeholder="Write your full name." required="">
+                <input type="text" name="email" class="form--input" id="email" placeholder="Write your email." required="">
+                <input type="tel" name="phone" class="form--input" id="phone" placeholder="Write your phone number (optional).">
+                <textarea name="message" class="form--textarea" id="message" cols="15" rows="15" placeholder="Enter your message here."></textarea>
+                <p class="form--caption">When you click on submit, you accept the terms and conditions of this site.</p>
+                <button type="submit" class="btn--submit rounded-md orange-yellow-gradient">Submit</button>
+
+            </form>
+        </div>
+
+    </main>
+    <footer class="footer">
+
+        <!-- <ul class="socials">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+            </ul> -->
+        <div class="footer__menu">
+            <ul class="footer__links">
+                <li class="footer__item"><a class="footer__link" href="../index.html">Home</a></li>
+                <li class="footer__item"><a class="footer__link" href="./about.html">About</a></li>
+                <li class="footer__item"><a class="footer__link" href="./portfolio.html">Portfolio</a></li>
+                <li class="footer__item"><a class="footer__link" href="./services.html">Services</a></li>
+                <li class="footer__item"><a class="footer__link" href="./contact.html">Contact</a></li>
+                <li class="footer__item"><a href="html/faq.html" class="navbar__link">FAQ</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Cookies policy</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <hr class="footer--divider">
+        <div class="footer__bottom">
+            <p>Copyright &copy; 2022.</p>
+        </div>
+        </div>
+    </footer>
+    <!-- This next two scripts are for responsive menu -->
+    <script>
+        const navbar = document.querySelector(".nav--bar");
+        const menuToggle = document.querySelector(".menu--toggle");
+        menuToggle.addEventListener("click", () => {
+            navbar.classList.toggle("open");
+        });
+    </script>
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>

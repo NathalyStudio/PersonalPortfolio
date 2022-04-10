@@ -216,7 +216,8 @@ body {
 }
 
 .section--services--title,
-.section--about--title {
+.section--about--title,
+.contact--form--title {
     display: block;
     padding: 5% 5% 0 5%;
     text-align: center;
