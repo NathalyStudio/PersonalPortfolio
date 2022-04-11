@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/portfolio--styles.css">
     <title>Portfolio | Andreina Rodriguez</title>
 
 </head>
@@ -36,7 +37,42 @@
         </div>
     </header>
 
+    <main class="main">
+        <h2 class="main--title">Portfolio</h2>
+        <p class="main--description">I know you've read what I do. But I know that reading that someone knows how to do something is not enough.</p>
+        <p class="main--description"> That's why in this section you can find some of the projects I've done.</p>
+        <p class="main--description">Just click on each one and a window will open where I will tell you the case study and you will see the tools I used and my creation process. </p>
+        <p class="main--description">You will be able to see screenshots of the project. And, in some cases, you will find a link to visit the site directly.</p>
+    </main>
+    <section class="case-studies">
+        <div class="case-studies--card">
+            <p class="case-studies__secondary-title">Featured project</p>
+            <h2 class="case-studies--title">Pastry lading page e-commerce</h2>
+            <p class="case-studies--description">A landing page for a fictional cake shop using on-trend colours, as well as good coding techniques in HTML5 and CSS. </p>
+            <p class="case-studies__secondary-title">VS Code, HTML5 and CSS3</p>
+            <a href="https://github.com/NathalyStudio/TzuzulBootcampPrimerProyecto" rel="noopener noreferrer" target="_blank" class="case-studies--btn--img"><img src="../img/github_icon-icons.com_60477.svg" alt="Git Hub to Andreina Rodriguez's project" class="img--icon"></a>
+            <a href="https://nathalystudio.github.io/TzuzulBootcampPrimerProyecto/" class="case-studies--btn--img"><img src="../img/picture_in_picture_enter_filled_icon_201272.svg" alt="" class="img--icon"></a>
+            <br>
+            <button id="case-studies--open-btn" href="" class="case-studies--btn--modal orange-yellow-gradient">Case</button>
 
+            <!-- The Modal -->
+
+            <div id="case-studies--modal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3 class="case-studies--h3">Case Studied: Pastry lading page e-commerce</h3>
+                    <p class="case-studies--description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus tempore, fugiat dolore corrupti aut, fugit veniam earum, consequatur officia qui modi velit aspernatur eaque deleniti porro magni explicabo. Rem, harum.</p>
+                    <img src="../img/First Proyect.png" alt="" class="case-studies--modal-img">
+                    <img src="../img/hero pastry tzuzul.png" alt="" class="case-studies--modal-img">
+                </div>
+
+            </div>
+
+            <!-- <a href="https://github.com/bchiang7/halcyon-site" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a> -->
+        </div>
+    </section>
     <footer class="footer">
         <!-- <div class="footer--content">
             <div class="footer--main-text">
@@ -80,6 +116,35 @@
     <script>
         function toggleMobileMenu(menu) {
             menu.classList.toggle('open');
+        }
+    </script>
+    <!-- this is for the modal -->
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("case-studies--modal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("case-studies--open-btn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
     </script>
 </body>

@@ -206,7 +206,8 @@ body {
     padding-top: 1em;
 }
 
-.section--about--description {
+.section--about--description,
+.main--description {
     font-size: .9em;
     text-align: left;
     margin: 1em 0;
@@ -217,7 +218,8 @@ body {
 
 .section--services--title,
 .section--about--title,
-.contact--form--title {
+.contact--form--title,
+.main--title {
     display: block;
     padding: 5% 5% 0 5%;
     text-align: center;

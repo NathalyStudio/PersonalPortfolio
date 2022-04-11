@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Anybody-Regular;
+    src: url("/fonts/Anybody/Anybody-VariableFont_wdth\,wght.ttf");
+    font-weight: normal;
+}
+
+.main {
+    padding: 5em 1em 0 1em;
+    line-height: 1.6rem;
+}
+
+.case-studies {
+    display: flex;
+    flex-direction: column;
+}
+
+.case-studies--card {
+    background-color: var(--charleston-black);
+    min-height: 30vh;
+    padding: 1em 0 .5em 1em;
+    margin: 5% 8%;
+    border-radius: 7px;
+}
+
+.case-studies__secondary-title {
+    font-family: monospace;
+    font-weight: 500;
+    color: var(--emphasis);
+}
+
+.case-studies--title {
+    font: normal 600 1.5em 'Anybody', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.case-studies--description {
+    font-size: .9em;
+    text-align: left;
+    line-height: 1.8rem;
+}
+
+.img--icon {
+    margin-top: 1em;
+    height: 35px;
+    justify-content: space-between;
+}
+
+.case-studies--btn--modal {
+    text-decoration: none;
+    padding: 5px 3em;
+    border-radius: .3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    color: var(--main-tx-color);
+    border-color: transparent;
+    border-width: 0;
+    font-size: 1.2em;
+    font-family: 'Anybody', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: var(--charleston-black);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid transparent;
+    width: 80%;
+    font-family: 'Anybody', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5rem;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.case-studies--modal-img {
+    height: 5em;
+    box-sizing: border-box;
+}
+
+
+/* 'font-style', 'font-variant', 'font-weight', 'font-size', 'line-height', and 'font-family', 
+at the same place in the style sheet. The syntax of this property is based on a traditional typographical 
+shorthand notation to set multiple properties related to fonts. */
