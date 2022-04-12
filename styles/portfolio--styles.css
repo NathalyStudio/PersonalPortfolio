@@ -170,6 +170,15 @@
 }
 
 
+/* Laptop L */
+
+@media (min-width: 1440px) {
+    .case-studies--card {
+        min-height: fit-content;
+    }
+}
+
+
 /* .visible {
     opacity: 1;
     pointer-events: all;
