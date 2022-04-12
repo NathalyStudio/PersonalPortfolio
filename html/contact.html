@@ -40,7 +40,7 @@
         <h2 class="contact--form--title">Let's get in touch</h2>
         <p class="contact--form--description">I am available to work on your projects and bring any idea you have to life. We are just a click apart of that conversation.</p>
         <div class="contact--form--container">
-            <form action="https://formspree.io/f/xzbojzev" method="POST" class="contact-form">
+            <form action="https://formspree.io/f/xzbojzev" method="POST" class="contact-form" id="contact-form">
                 <input type="text" name="name" class="form--input" id="name" placeholder="Write your full name." required="">
                 <input type="text" name="email" class="form--input" id="email" placeholder="Write your email." required="">
                 <input type="tel" name="phone" class="form--input" id="phone" placeholder="Write your phone number (optional).">
@@ -90,6 +90,8 @@
             menu.classList.toggle('open');
         }
     </script>
+    <!-- Validation -->
+    <script src="../js/validations.js"></script>
 </body>
 
 </html>

@@ -125,6 +125,56 @@
     box-sizing: border-box;
 }
 
+.space {
+    height: 5em;
+}
+
+.footer__menu {
+    padding-left: 10%;
+}
+
+
+/* tablets */
+
+@media (min-width: 768px) {
+    .case-studies {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 2.2em;
+        margin-right: 1em;
+    }
+    .case-studies--card {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0em;
+    }
+}
+
+
+/* laptops */
+
+@media (min-width: 1024px) {
+    .main--title {
+        padding-top: 1%;
+    }
+    .case-studies {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .case-studies--card {
+        width: 45%;
+        padding: 1.8em;
+        margin-bottom: 2em;
+    }
+}
+
+
+/* .visible {
+    opacity: 1;
+    pointer-events: all;
+} */
+
 
 /* 'font-style', 'font-variant', 'font-weight', 'font-size', 'line-height', and 'font-family', 
 at the same place in the style sheet. The syntax of this property is based on a traditional typographical 
