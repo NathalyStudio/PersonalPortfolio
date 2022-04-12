@@ -39,11 +39,21 @@ body {
     font-weight: 1500;
 }
 
+.main--title {
+    margin-bottom: 1em;
+    padding-left: 0;
+}
+
 .main--description,
 .skills-description {
     padding-left: 10%;
     margin-top: 7%;
     line-height: 1.8em;
+}
+
+.main--description {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .work-process {
