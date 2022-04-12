@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/contact--styles.css">
-    <title>Contact | Andreina Rodriguez</title>
+    <link rel="stylesheet" href="../styles/under--construction.css">
 
+    <script src="../js/scrollreveal.js"></script>
+    <title>About me | Andreina Rodriguez</title>
 </head>
 
 <body>
+
     <header class="header">
         <nav class="navbar">
             <ul class="navbar__links">
@@ -36,29 +38,22 @@
             </ul>
         </div>
     </header>
-    <main class="section--contact--form">
-        <h2 class="contact--form--title">Let's get in touch</h2>
-        <p class="contact--form--description">I am available to work on your projects and bring any idea you have to life. We are just a click apart of that conversation.</p>
-        <div class="contact--form--container">
-            <form action="https://formspree.io/f/xzbojzev" method="POST" class="contact-form" id="contact-form">
-                <input type="text" name="name" class="form--input" id="name" placeholder="Write your full name." required="">
-                <input type="text" name="email" class="form--input" id="email" placeholder="Write your email." required="">
-                <input type="tel" name="phone" class="form--input" id="phone" placeholder="Write your phone number (optional).">
-                <textarea name="message" class="form--textarea" id="message" cols="15" rows="15" placeholder="Enter your message here."></textarea>
-                <p class="form--caption">When you click on submit, you accept the terms and conditions of this site.</p>
-                <button type="submit" class="btn--submit rounded-md orange-yellow-gradient">Submit</button>
+    <main class="main">
+        <section class="main--content">
+            <img src="../img/UNDER_CONSTRUCTION_VECTOR.svg" alt="Andreina Rodriguez frontend developer" class="main--img__big">
 
-            </form>
-        </div>
 
+            <h2 class="main--title text--orange--yellow--gradient">Oops... This page is still under construction</h2>
+            <p class="main-description">Please go back, we'll be launching this page soon!!</p>
+            <a class="btn--return rounded-md orange-yellow-gradient" href="../index.html">Go back</a>
+            </p>
+
+
+        </section>
     </main>
-    <footer class="footer">
 
-        <!-- <ul class="socials">
-                <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
-            </ul> -->
+
+    <footer class="footer">
         <div class="footer__menu">
             <ul class="footer__links">
                 <li class="footer__item"><a class="footer__link" href="../index.html">Home</a></li>
@@ -90,8 +85,7 @@
             menu.classList.toggle('open');
         }
     </script>
-    <!-- Validation -->
-    <script src="../js/validations.js"></script>
+
 </body>
 
 </html>
