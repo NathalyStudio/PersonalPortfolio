@@ -10,6 +10,7 @@
     --eire-black: #121616;
     --charleston-black: #252D2D;
     --rgba-charleston-black: rgba(37, 45, 45, .6);
+    --rgba-black: rgba(0, 0, 0, 0.7);
 }
 
 @font-face {

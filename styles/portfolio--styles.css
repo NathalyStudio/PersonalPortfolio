@@ -46,9 +46,11 @@
     justify-content: space-between;
 }
 
+
+/* MODAL STYLES */
+
 .case-studies--btn--modal {
-    text-decoration: none;
-    padding: 5px 3em;
+    padding: 5px 2em;
     border-radius: .3em;
     margin-left: auto;
     margin-right: auto;
@@ -63,6 +65,21 @@
     font-family: 'Anybody', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
 }
+
+
+/* Modal Content */
+
+
+/* .modal-content {
+    background-color: var(--charleston-black);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid transparent;
+    width: 80%;
+    font-family: 'Anybody', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5rem;
+}
+ */
 
 
 /* The Modal (background) */
@@ -84,9 +101,9 @@
     /* Full height */
     overflow: auto;
     /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
+    background-color: var(--eire-black);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--rgba-black);
     /* Black w/ opacity */
 }
 
@@ -94,22 +111,51 @@
 /* Modal Content */
 
 .modal-content {
-    background-color: var(--charleston-black);
+    position: relative;
+    background-color: var(--main-bg-color);
     margin: auto;
-    padding: 20px;
-    border: 1px solid transparent;
+    padding: 0;
     width: 80%;
-    font-family: 'Anybody', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.5rem;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.6s;
+    /* border-radius: 1em; */
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -400px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -400px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 
 /* The Close Button */
 
 .close {
-    color: #aaaaaa;
+    color: var(--main-tx-color);
     float: right;
-    font-size: 28px;
+    font-size: 5em;
+    padding: 0;
     font-weight: bold;
 }
 
@@ -119,6 +165,28 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.modal-header {
+    padding: 1em;
+    color: white;
+}
+
+.modal-body {
+    padding: .7rem 1rem;
+}
+
+
+/* .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+} */
+
+
+/* Till here the modal styles */
+
+
+/*  */
 
 .case-studies--modal-img {
     height: 5em;
