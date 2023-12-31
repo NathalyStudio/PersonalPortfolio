@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
     screens: {
-      xs: '500px',
-      sm: '750px',
-      md: '990px',
+      xs: '425px',
+      sm: '768px',
+      md: '1024px',
       lg: '1440px',
       xlg: '1920px',
       pageMaxWidth: '1440px',
@@ -28,9 +30,12 @@ module.exports = {
       notion_yellow: '#dfab01',
       cardinal: '#c9184a',
       carousel_pink: '#F6D9E1',
+      ...colors
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
 
