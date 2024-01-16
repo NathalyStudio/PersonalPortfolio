@@ -32,7 +32,13 @@ module.exports = {
       carousel_pink: '#F6D9E1',
       ...colors
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        kalam: ["Kalam", "sans-serif"],
+        robotoSlab: ['Roboto Slab', 'serif'],
+      }
+    },
   },
   plugins: [
     require('tailwindcss-animated')
