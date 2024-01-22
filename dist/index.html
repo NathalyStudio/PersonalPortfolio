@@ -5,11 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="I'm Andreina Nathaly Rodriguez, a middle frontend developer and UX/UI designer.">
+    content="I'm Nathaly, a frontend developer and UX/UI designer.">
   <title>Nathaly Frontend developer</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
@@ -50,11 +48,11 @@
             </a>
             <div
               class="flex flex-col items-start justify-center w-full space-x-6 text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center">
-              <a href="#_"
+              <a href="#hero"
                 class="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-carousel_pink md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center">Home</a>
-              <a href="#_"
+              <a href="#about"
                 class="inline-block w-full py-2 mx-0 font-medium text-left text-white md:w-auto md:px-0 md:mx-2 hover:text-carousel_pink lg:mx-3 md:text-center">About</a>
-              <a href="#_"
+              <a href="#projects"
                 class="inline-block w-full py-2 mx-0 font-medium text-left text-white md:w-auto md:px-0 md:mx-2 hover:text-carousel_pink lg:mx-3 md:text-center">Projects</a>
               <a href="#_"
                 class="inline-block w-full py-2 mx-0 font-medium text-left text-white md:w-auto md:px-0 md:mx-2 hover:text-carousel_pink lg:mx-3 md:text-center">Let's
@@ -63,16 +61,15 @@
             <div
               class="social-icons flex flex-row items-start justify-end w-full pt-4 pb-6 md:pb-0 md:items-center md:w-1/3 md:py-0">
               <a href="https://www.linkedin.com/in/andreina-nathaly-rodriguez-martinez/"
-                class="w-full px-6 py-2 mr-0 text-white md:px-3 md:mr-2 lg:mr-3 md:w-auto">
+                class="w-full px-6 py-2 mr-0 text-white md:px-3 md:mr-2 lg:mr-3 md:w-auto" target="_blank" rel="noopener noreferrer">
                 <img src="../img/linkedin_icon.svg" alt="LinkedIn Icon" width="30" height="30"
                   class="brightness-0 invert transition ease-in-out duration-200 hover:duration-200 hover:transition hover:ease-in-out hover:brightness-100 hover:invert-0">
               </a>
-              <a href="#_" class="inline-flex items-center w-full px-6 py-3 md:w-auto md:rounded-full">
+              <a href="https://github.com/NathalyStudio" class="inline-flex items-center w-full px-6 py-3 md:w-auto md:rounded-full" target="_blank" rel="noopener noreferrer">
                 <img src="../img/github_icon.svg" alt="Github icon" width="30" height="30"
                   class="brightness-0 invert transition ease-in-out duration-200 hover:duration-200 hover:transition hover:ease-in-out hover:brightness-100 hover:invert-0">
               </a>
-              <a href="https://www.instagram.com/andreinarodriguez53/"
-                class="w-full px-6 py-2 mr-0 text-white md:px-3 md:mr-2 lg:mr-3 md:w-auto">
+              <a href="https://www.instagram.com/andreinarodriguez53/" rel="noopener noreferrer" class="w-full px-6 py-2 mr-0 text-white md:px-3 md:mr-2 lg:mr-3 md:w-auto" target="_blank">
                 <img src="../img/instagram_icon.svg" alt="Github icon" width="30" height="30"
                   class="brightness-0 invert transition ease-in-out duration-200 hover:duration-200 hover:transition hover:ease-in-out hover:brightness-100 hover:invert-0">
               </a>
@@ -94,7 +91,7 @@
     </nav>
   </header>
   <main class="mx-auto z-50 max-w-7xl w-full p-4 md:p-6 lg:p-0">
-    <section class="hero bg-eire_black text-white">
+    <section class="hero bg-eire_black text-white" id="hero">
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 md:h-[950px] xlg:h-auto align-middle md:my-12">
         <div class="first-column flex flex-col justify-center align-middle">
           <div class="animation-wrapper relative min-h-[7rem] mt-8">
@@ -159,11 +156,13 @@
             </div>
           </div>
             <div class="button_wrapper flex flex-col xs:flex-row justify-center items-center  gap-4 md:flex-row mb-12 md:mb-0 font-poppins">
-              <button id="btn_about" class="w-[12rem] h-[3rem] rounded-full bg-white text-eire_black font-bold  font-poppins transition-all ease-in-out hover:bg-carousel_pink hover:text-pink-900 capitalize">
-                Get to know me            
+              <button id="btn_about" class="relative w-[12rem] h-[3rem] rounded-full bg-white text-eire_black font-bold  font-poppins transition-all ease-in-out capitalize">
+                Get to know me
+                <div class="absolute rounded-full bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-800 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-50"></div>            
               </button>
-              <button id="btn_portfolio" class="w-[12rem] h-[3rem] rounded-full bg-white text-eire_black font-bold  font-poppins transition-all ease-in-out hover:bg-carousel_pink hover:text-pink-900 capitalize">
-                Check my portfolio         
+              <button id="btn_portfolio" class="relative w-[12rem] h-[3rem] rounded-full bg-white text-eire_black font-bold  font-poppins transition-all ease-in-out capitalize">
+                Check my portfolio
+                <div class="absolute rounded-full bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-800 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-50"></div>      
               </button>
             </div>
           
@@ -174,7 +173,7 @@
         </div>
       </div>
     </section>
-    <section class="about relative mb-16">
+    <section class="about relative mb-16" id="about">
       <h1 class="text-center capitalize text-3xl leading-normal md:text-6xl font-black">How I Work: Bringing Your Vision to Life, Pixel by Pixel</h1>
       
       <p class="paragraph mt-12 mb-4 text-justify md:text-center mx-auto sm:max-w-4xl lg:max-w-full">I am a bilingual Software Engineer, graduated from UCLA (Venezuela). 
@@ -243,140 +242,123 @@
       </div>
      
     </section>
-    <section class="skills relative mb-16">
+    <section class="skills relative mb-16" id="skills">
       <h1 class="ext-center capitalize text-3xl leading-normal md:text-6xl font-black text-center mb-8 md:mb-16">My skillset include</h1>
       <div class="skillset-card-wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6">
-
+        <div class="webflow-card text-center border-carousel_pink rounded-md border-2 border-solid px-6 py-10">
+          <h2 class="text-carousel_pink uppercase text-2xl font-black mb-4">Webflow Development</h2>
+          <p class="">My superpowers here include solid foundation in HTML, CSS, and JavaScript for seamless custom coding and animations that bring your vision to life but having meticulous attention to pixel-perfect responsive design and optimized performance.</p>
+          <div class="pills-wrapper flex flex-row flex-wrap gap-x-3 gap-y-2 align-middle justify-center text-xs uppercase mt-4">
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+              HTML
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+              CSS
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+              JavaScript
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+              Integrations (Klaviyo, Zapier...)
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+              Design in Figma
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+              CMS
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+              Mobile first
+            </div>
+          </div>
+        </div>
         <div class="shopify-card text-center border-carousel_pink rounded-md border-2 border-solid px-6 py-10">
           <h2 class="text-carousel_pink uppercase text-2xl font-black mb-4">Shopify Development</h2>
           <p class="">I am a one-stop Shopify master transforming drab stores into sleek, high-performing eCommerce havens. From rethemes to migrations, unlock powerful features, and checkout extensibility and Webpixels magic.</p>
           <div class="pills-wrapper flex flex-row flex-wrap gap-x-3 gap-y-2 align-middle justify-center text-xs uppercase mt-4">
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">Retheme and Migration</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">Liquid</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">HTML & CSS</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">Javascript</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">Web pixel and Checkout extensibility</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">Store Optimization</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">Marketing tags</div>
-          </div>
-        </div>
-        <div class="webflow-card text-center border-carousel_pink rounded-md border-2 border-solid px-6 py-10 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20">
-          <h2 class="text-carousel_pink uppercase text-2xl font-black mb-4">Webflow Development</h2>
-          <p class="">My superpowers here include solid foundation in HTML, CSS, and JavaScript for seamless custom coding and animations that bring your vision to life but having meticulous attention to pixel-perfect responsive design and optimized performance.</p>
-          <div class="pills-wrapper flex flex-row flex-wrap gap-x-3 gap-y-2 align-middle justify-center text-xs uppercase mt-4">
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">HTML</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">CSS</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">JavaScript</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">Integrations (Klaviyo, Zapier...)</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">Design in Figma</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">CMS</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">Mobile first</div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              Retheme and Migration
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              Liquid
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              HTML & CSS
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              Javascript
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              Web pixel and Checkout extensibility
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              Store Optimization
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+              Marketing tags
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
           </div>
         </div>
         <div class="frontend-developer-card text-center border-carousel_pink rounded-md border-2 border-solid px-6 py-10">
           <h2 class="text-carousel_pink uppercase text-2xl font-black mb-4">Frontend Development</h2>
           <p class="">Your website, not just seen, but experienced. My mastery of HTML, CSS, and JavaScript lets me weave code and creativity into pixel-perfect responsive designs and optimized experiences that capture hearts and convert like magic. Leave the tech wizardry to me – you reap the rewards.</p>
-          <div class="pills-wrapper flex flex-row flex-wrap gap-x-3 gap-y-2 align-middle justify-center text-xs uppercase mt-4">
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">HTML/CSS/JS</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">VueJS</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">Tailwind</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">AplineJS</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">GA4 - Marketing Tags</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">ReactJS</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">three.JS</div>
-            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1">Figma Design</div>
+          <div class="pills-wrapper flex flex-row flex-wrap gap-x-3 gap-y-2 align-middle justify-center text-xs uppercase mt-4 ">
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 relative">
+              <span class="text-white">HTML/CSS/JS</span>
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 relative">
+              VueJS
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 relative">
+              Tailwind
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 relative">
+              AplineJS
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 relative">
+              GA4 - Marketing Tags
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 relative">
+              ReactJS
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 relative">
+              three.JS
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
+            <div class="pill border-2 border-carousel_pink rounded-md px-4 py-1 bg-carousel_pink bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 relative">
+              Figma Design
+              <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-pink-700 bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-40"></div>
+            </div>
           </div>
         </div>
       </div>
-      <!--
-      <div class="icon-row m-8 grid grid-cols-2 align justify-center items-center gap-4 sm:grid-cols-4 md:grid-cols-6">
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite transition ease-in delay-250 duration-500 hover:bg-[#95BF47] hover:border-[#95BF47]">
-          Shopify
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite transition ease-in delay-300 duration-500 hover:bg-[#000099] hover:border-[#000099]">
-          LIQUID
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black hover:animate-bounce hover:animate-infinite transition ease-in delay-300 duration-500 hover:bg-gradient-to-r hover:from-pink-500 hover:via-red-500 hover:to-yellow-500 hover:border-[transparent]">
-          HTML&CSS
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-bounce  hover:animate-infinite transition ease-in delay-300 duration-500 hover:bg-white hover:text-black hover:border-green-900">
-          AlpineJS
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite transition ease-in delay-300 duration-500 hover:bg-[#38bdf8] hover:border-blue-700">
-          Tailwind
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite transition ease-in delay-300 duration-500 hover:bg-black" >
-          Three.js
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-bounce hover:animate-infinite">
-          Vanilla Javascript
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Google Analytics
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Marketing Tags and scripts
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Elementor (WordPress)
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          DIVI (WordPress)
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Checkout extensibility
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Shopify Apps
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Hydrogen
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Remix
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Polaris
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Webflow
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Figma
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Illustrator
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Photoshop
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          Gimp
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          VueJS
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          ReactJS
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          DataLayer
-        </div>
-        <div class="skill-cell px-4 text-center py-1 border-carousel_pink border-2 inline-block border-solid rounded-md uppercase tracking-wide font-black break-words hover:animate-wiggle hover:animate-infinite">
-          ADA Accessibility 
-        </div>
-      </div>-->
     </section>
-    <section class="projects"></section>
-    <section class="experience"></section>
-    <section class="contact"></section>
+    <section class="projects" id="projects"></section>
+    <section class="experience" id="experience"></section>
+    <section class="contact" id="contact"></section>
   </main>
   <footer></footer>
-
-
-  <!---->
-
-  
   
 </body>
 
